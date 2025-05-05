@@ -1,11 +1,13 @@
 import Banner from './componentes/Banner';
-import Formulario from './componentes/ColaboradorForms';
+import CampoTexto from './componentes/CampoTexto';
 
 function App() { //componente react
   return (
     <div className="App">
       <Banner/>
-      <Formulario/>
+      <CampoTexto label="Nome"/>
+      <CampoTexto label="Cargo"/>
+      <CampoTexto label="Imagem"/>
     </div>
   );
 }
