@@ -1,0 +1,15 @@
+.ListaSuspensa__container {
+    padding-top: 35px;
+}
+
+.ListaSuspensa__label {
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+
+.ListaSuspensa__select {
+    height: 80px;
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+    font-size: 20px;
+}
