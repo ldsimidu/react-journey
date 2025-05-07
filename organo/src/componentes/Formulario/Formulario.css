@@ -1,0 +1,22 @@
+.formulario__container {
+    background-color: #F6F6F6;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+    /*border-radius: 1rem;*/
+
+    /*Container já faz isso*/
+    /*display: flex;
+    justify-content: center*/
+}
+
+.formulario__label-title {
+    font-family: var(--prata);
+    text-align: center;
+    font-size: 55px;
+}
+
+.formulario__container form {
+    font-family: var(--montserrat);
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
