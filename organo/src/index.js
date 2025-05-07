@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+import '@fontsource/kanit/400.css';
+import '@fontsource/montserrat/400.css';
+
 import './index.css';
-import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
