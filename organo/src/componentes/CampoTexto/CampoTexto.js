@@ -2,8 +2,8 @@ import './CampoTexto.css'
 
 export const CampoTexto = (props) => {
     return (
-        <div className="CampoTexto__container container pt-5 p-4">
-            <label htmlFor="nome" className="CampoTextoLabel form-label">
+        <div className="CampoTexto__container container">
+            <label htmlFor="nome" className="CampoTexto__label form-label">
                 {props.label}
             </label>
             <input

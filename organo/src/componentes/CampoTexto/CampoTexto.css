@@ -1,5 +1,9 @@
-.CampoTextoLabel {
-    font-size: 25px;
+.CampoTexto__container {
+    padding-top: 35px;
+}
+
+.CampoTexto__label {
+    font-size: 22px;
     color: black;
     font-weight: bold;
 }
