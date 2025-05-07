@@ -1,0 +1,11 @@
+.CampoTextoLabel {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.CampoText__input {
+    height: 80px;
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+    font-size: 20px;
+}
