@@ -1,10 +1,12 @@
 import './Formulario.css'
 import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
+import Botao from '../Botao';
 
 export const Formulario = () => {
 
     const times = [
+        '',
         'G2',
         'MIBR',
         'LOUD',
@@ -21,10 +23,8 @@ export const Formulario = () => {
                 <CampoTexto label='Nome' placeholder='Digite seu nome'/>
                 <CampoTexto label='Cargo' placeholder='Digite seu cargo'/>
                 <CampoTexto label='Imagem' placeholder='Informe o endereço da imagem'/>
-
                 <ListaSuspensa itens={times} />
-
-                <button type="submit" className="mb-4 btn btn-primary mt-3">Criar card</button>
+                <Botao texto="Criar Card" />
             </form>
         </div>
   );
