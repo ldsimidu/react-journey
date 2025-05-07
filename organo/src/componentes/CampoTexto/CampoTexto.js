@@ -7,6 +7,7 @@ export const CampoTexto = (props) => {
                 {props.label}
             </label>
             <input
+                required={props.obrigatorio}
                 type="text" 
                 className="CampoText__input form-control border-0" 
                 id="nome" 
