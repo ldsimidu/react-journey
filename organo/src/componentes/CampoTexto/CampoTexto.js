@@ -1,15 +1,12 @@
-import { useState } from 'react'
 import './CampoTexto.css'
 
 export const CampoTexto = (props) => {
 
-    // Cria um estado chamado 'valor' com valor inicial 'Exemplo' e uma função 'setValor' para atualizá-lo
-    const [valor, setValor] = useState('Exemplo')
-
     // Função que é chamada sempre que o usuário digitar no input (que possua onChange)
     const aoDigitado = (evento) => {
-        setValor(evento.target.value) // Atualiza o estado 'valor' com o conteúdo digitado no campo
-        console.log(valor)
+        props.aoAlterado(evento.target.value)
+        //setValor(evento.target.value) // Atualiza o estado 'valor' com o conteúdo digitado no campo
+        //console.log(valor)
     }
 
     return (
@@ -18,7 +15,7 @@ export const CampoTexto = (props) => {
                 {props.label}
             </label>
             <input
-                value={valor}
+                value={props.valor}
                 onChange={aoDigitado}
                 required={props.obrigatorio}
                 type="text" 
