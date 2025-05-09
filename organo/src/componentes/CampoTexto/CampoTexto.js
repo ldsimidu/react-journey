@@ -3,10 +3,12 @@ import './CampoTexto.css'
 
 export const CampoTexto = (props) => {
 
-    const [valor, setValor] = useState('dwa')
+    // Cria um estado chamado 'valor' com valor inicial 'Exemplo' e uma função 'setValor' para atualizá-lo
+    const [valor, setValor] = useState('Exemplo')
 
+    // Função que é chamada sempre que o usuário digitar no input (que possua onChange)
     const aoDigitado = (evento) => {
-        setValor(evento.target.value)
+        setValor(evento.target.value) // Atualiza o estado 'valor' com o conteúdo digitado no campo
         console.log(valor)
     }
 
