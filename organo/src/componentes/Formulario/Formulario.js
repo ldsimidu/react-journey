@@ -9,8 +9,10 @@ export const Formulario = () => {
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
+    const [time, setTime] = useState('')
 
     const times = [
+        'Selecione um time',
         'G2',
         'MIBR',
         'LOUD',
@@ -22,7 +24,12 @@ export const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault() //evento que impede auto carregar do botão
-        console.log('Form foi submetido => ', nome, cargo, imagem)
+        console.log('Form foi submetido\n------------------------\n',
+            '\nNome:', nome, 
+            '\nCargo:', cargo, 
+            '\nImagem:', imagem,
+            '\nTime:', time
+        )
     }
 
     return (
@@ -50,7 +57,12 @@ export const Formulario = () => {
                     valor={imagem}
                     aoAlterado={valor => setImagem(valor)}
                 />
-                <ListaSuspensa itens={times} />
+                <ListaSuspensa 
+                    itens={times} 
+                    obrigatorio={true}
+                    valor={time}
+                    aoAlterado={valor => setTime(valor)}    
+                />
                 <Botao>
                     Criar Card
                 </Botao>

@@ -4,7 +4,9 @@ export const ListaSuspensa = (props) => {
   return (
     <div className="ListaSuspensa__container container pb-5">
         <label className="ListaSuspensa__label form-label container">Time</label>
-        <select className="ListaSuspensa__select form-select border-0">
+        <select className="ListaSuspensa__select form-select border-0" 
+          onChange={evento => props.aoAlterado(evento.target.value)} 
+          required={props.obrigatorio} >
             {props.itens.map(item => {
                 return (
                     <option key={item}>{item}</option> //precisa de item key, react perde o controle de rendereização sem ele
