@@ -1,11 +1,11 @@
 .time__section {
-    background-color: #D9F7E9;
     text-align: center;
+    padding-bottom: 36px;
 }
 
 .time__section h1 {
     padding-top: 50px;
     font-family: var(--prata);
-    border-bottom: 4px solid #57C278;
     display: inline-block;
+    border-bottom: 4px solid;
 }
