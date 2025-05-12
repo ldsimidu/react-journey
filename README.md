@@ -1,9 +1,21 @@
-# Projeto Organo - React App
+# **Projeto Organo - React Journey**
 
-O projeto 'Organo' é um projeto tem como origem um curso da Alura 'React: desenvolvendo com JavaScript'. <br>
-Este projeto é um sistema de cadastro de colaboradores, onde você pode preencher um formulário e gerar cards para cada membro de um time específico. Ele foi desenvolvido como parte de um curso da Alura sobre ReactJS.
+### 👋 **Olá! Seja muito bem-vindo ao projeto 'Organo'**, projeto que tem como origem um dos cursos da Alura: 'React: desenvolvendo com JavaScript'. <br><br>
+O *Organo* é um sistema de cadastro de colaboradores, onde você pode preencher um formulário e gerar cards para cada membro de um time específico. <br><br>
+Ao desenvolver este projeto em React, é retratado os principais fundamentos do Framework, como:
+- Criação e reutilização de componentes;
+- Comunicação entre eles por meio de props;
+- Controle de dados com useState e o conceito de componentes controlados.
+<br><br>
 
----
+Neste projeto, também é exercitado a organização de um projeto real com um **FIGMA** já preparado e pronto para ser replicado, com estrutura modularizada por pastas, aplicação de estilos com CSS próprio para cada componente e a construção de formulários dinâmicos e interativos. Além disso, compreende como o React trabalha com renderização condicional e como estruturar a interface em blocos reutilizáveis, seguindo boas práticas de desenvolvimento frontend.
+
+<br><br>
+
+# **Componentes & Estrutura**
+
+#### *Aqui irei apresentar as principais estruturas de componentes desenvolvidas no Projeto Organo e como cada componente se conversam* <br><br>
+
 
 ## 📁 Estrutura Principal do Projeto
 
