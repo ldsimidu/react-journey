@@ -5,6 +5,7 @@
 
 .time__section h1 {
     padding-top: 50px;
+    margin-bottom: 30px;
     font-family: var(--prata);
     display: inline-block;
     border-bottom: 4px solid;
