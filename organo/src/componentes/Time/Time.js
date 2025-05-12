@@ -11,7 +11,9 @@ export const Time = (props) => {
         <section 
             className='time__section' style={cSec}>
             <h1 style={cBorder}>{props.nome}</h1>
-            {props.colaboradores.map(colaborador => <Colaborador cor={cPri} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} />)}
+            <div className='time__colaborador-card'>
+                {props.colaboradores.map(colaborador => <Colaborador cor={cPri} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} />)}
+            </div>
         </section>
     )
 }
