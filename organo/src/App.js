@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
@@ -43,11 +44,19 @@ function App() { //componente react
     }
   ]
 
+  const [colaboradores, setColaboradores] = useState([]) //criando uma lista que será armazenada os novos Colaboradores
+
+  const newColaborador = (colaborador) => { //Criando função para novoColaborador
+    console.log(colaborador)
+    setColaboradores([...colaboradores, colaborador]) //essas reticências evita o bug de criar 2 cards de uma vez, espalhas os itens no array
+  }
+
   return (
     <div className="App">
       <Banner/>
       <Formulario 
         times={times.map(time => time.nome)} 
+        novoColaborador={colaborador => newColaborador(colaborador)}
       />
       {times.map(time => 
         <Time 
@@ -55,6 +64,7 @@ function App() { //componente react
           nome={time.nome} 
           corPrimaria={time.corPrimaria} 
           corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores}
         />)} 
     </div>
   );
