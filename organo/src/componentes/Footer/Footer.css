@@ -1,0 +1,39 @@
+.footer__container {
+    background-image: url('../../../public/imagens/fundo.png');
+    font-family: var(--montserrat);
+    color: rgb(255, 255, 255);
+    background-color: #6278F7;
+    height: 213px;
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__socials li {
+    padding-right: 8%;
+}
+
+.footer__socials img {
+    width: 28px;
+    height: auto;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__label {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
