@@ -20,3 +20,14 @@
     margin-right: 5%;
     
 }
+
+@media screen and (max-width: 768px) {
+
+    .formulario__container {
+        max-width: 90%;
+    }
+
+    .formulario__label-title {
+        font-size: 20px;
+    }
+}

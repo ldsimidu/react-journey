@@ -1,10 +1,10 @@
 .footer__container {
-    background-image: url('../../../public/imagens/fundo.png');
     font-family: var(--montserrat);
     color: rgb(255, 255, 255);
+    background-image: url('../../../public/imagens/fundo.png');
+    
     background-color: #6278F7;
     height: 213px;
-
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -16,6 +16,10 @@
     list-style: none;
     display: flex;
     justify-content: center;
+}
+
+.footer__socials {
+    margin: 0;
 }
 
 .footer__socials li {
@@ -32,8 +36,37 @@
     justify-content: center;
 }
 
+.footer__logo img {
+    width: 100%;
+    max-width: 150px;
+    min-width: 80px;
+    height: auto;
+}
+
 .footer__label {
+    margin: 0;
     font-size: 25px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container {
+        height: 130px;
+    }
+    
+    .footer__container img{
+        width: 50%;
+    }
+
+    .footer__label {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .footer__container img{
+        width: 80%;
+    }
 }
