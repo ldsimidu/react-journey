@@ -33,8 +33,8 @@ export const Formulario = (props) => {
     }
 
     return (
-        <div className="formulario__container container mt-5 mb-5 rounded-p">
-            <h2 className="formulario__label-title pt-5 mb-4">Preencha os dados para criar o card do colaborador</h2>
+        <div className="formulario__container container">
+            <h2 className="formulario__label-title">Preencha os dados para criar o card do colaborador</h2>
             <form onSubmit={aoSalvar}>
                 <CampoTexto 
                     obrigatorio={true} 

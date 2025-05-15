@@ -2,8 +2,8 @@ import "./ListaSuspensa.css";
 
 export const ListaSuspensa = (props) => {
   return (
-    <div className="ListaSuspensa__container container pb-5">
-        <label className="ListaSuspensa__label form-label container">Time</label>
+    <div className="ListaSuspensa__container">
+        <label className="ListaSuspensa__label form-label">Time</label>
         <select className="ListaSuspensa__select form-select border-0" 
           key={props.valor}
           onChange={evento => props.aoAlterado(evento.target.value)} 

@@ -1,6 +1,9 @@
 .formulario__container {
     background-color: #F6F6F6;
-    box-shadow: 0 8px 8px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.50);
+    margin-top: 5%;
+    margin-bottom: 5%;
     /*border-radius: 1rem;*/
 
     /*Container já faz isso*/
@@ -12,11 +15,26 @@
     font-family: var(--prata);
     text-align: center;
     font-size: 55px;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 
 .formulario__container form {
     font-family: var(--montserrat);
     margin-left: 5%;
     margin-right: 5%;
-    
+}
+
+@media screen and (max-width: 768px) {
+
+    .formulario__container {
+        max-width: 90%;
+    }
+
+    .formulario__label-title {
+        font-size: 23px;
+        padding-top: 15px;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
 }
