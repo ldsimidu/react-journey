@@ -1,0 +1,38 @@
+.titulo__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.titulo__container {
+    display: inline-block;
+    color: #6278F7;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__title {
+    font-family: var(--prata);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo__hr {
+    background-color: #6278F7;
+    border: none;
+    height: 5px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .titulo__section {
+        padding-top: 8%;
+    }
+    
+    .titulo__title {
+        font-size: 30px;
+    }
+}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
+import Titulo from './componentes/Titulo';
 import Time from './componentes/Time';
 import Footer from './componentes/Footer';
 
@@ -59,6 +60,7 @@ function App() { //componente react
         times={times.map(time => time.nome)} 
         novoColaborador={colaborador => newColaborador(colaborador)}
       />
+      <Titulo colaboradores={colaboradores}/>
       {times.map(time => 
         <Time 
           key={time.nome} 
