@@ -25,6 +25,7 @@
     }
 
     .ListaSuspensa__select {
+        font-size: 12px;
         height: 50px;
         width: 100%;
     }
