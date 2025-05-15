@@ -3,6 +3,10 @@
 ### 👋 **Hello and welcome to the 'Organo' project**, based on one of Alura's courses: *"React: Developing with JavaScript"*.  
 *Organo* is a team member registration system, where you can fill out a form and generate cards for each member of a specific team.  
 
+---
+### ***Here is the [PUBLISHED SITE ON VERCEL](https://react-journey-seven.vercel.app/) where you can try it! =)***
+---
+
 While building this project with React, you'll go through essential concepts of the framework, such as:
 - Component creation and reuse;
 - Communication between components through props;
