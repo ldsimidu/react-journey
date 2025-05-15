@@ -10,7 +10,7 @@ export const CampoTexto = (props) => {
     }
 
     return (
-        <div className="CampoTexto__container container">
+        <div className="CampoTexto__container">
             <label htmlFor="nome" className="CampoTexto__label form-label">
                 {props.label}
             </label>
