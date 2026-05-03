@@ -60,7 +60,7 @@
 @media screen and (max-width: 768px) {
   .colaborador__container {
     width: 45%;
-    height: 180px;
+    height: 210px;
   }
 
   .colaborador__header {
@@ -71,6 +71,11 @@
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
+  }
+
+  .colaborador__botao-excluir {
+    font-size: 9px;
+    width: 50px;
   }
 
   .colaborador__footer {
