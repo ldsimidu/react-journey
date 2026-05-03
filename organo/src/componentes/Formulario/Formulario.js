@@ -3,7 +3,6 @@ import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 import { useState } from "react";
-import CheckBoxGitHub from "../CheckBoxGitHub/CheckBox";
 
 export const Formulario = (props) => {
   const [nome, setNome] = useState("");
@@ -48,28 +47,28 @@ export const Formulario = (props) => {
           label="Nome"
           placeholder="Digite seu nome"
           valor={nome}
-          aoAlterado={(valor) => setNome(valor)}
+          aoValorAlterado={(valor) => setNome(valor)}
         />
         <CampoTexto
           obrigatorio={true}
           label="Cargo"
           placeholder="Digite seu cargo"
           valor={cargo}
-          aoAlterado={(valor) => setCargo(valor)}
+          aoValorAlterado={(valor) => setCargo(valor)}
         />
         <CampoTexto
           obrigatorio={true}
           label="Imagem"
           placeholder="Informe o endereço da imagem"
           valor={imagem}
-          aoAlterado={(valor) => setImagem(valor)}
+          aoValorAlterado={(valor) => setImagem(valor)}
         />
 
         <ListaSuspensa
           itens={props.times}
           obrigatorio={true}
           valor={time}
-          aoAlterado={(valor) => setTime(valor)}
+          aoValorAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
       </form>
