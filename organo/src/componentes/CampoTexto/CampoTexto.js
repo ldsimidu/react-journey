@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CheckBoxGitHub from "../CheckBoxGitHub/CheckBox";
 import "./CampoTexto.css";
 
@@ -11,6 +11,13 @@ export const CampoTexto = ({
 }) => {
   const [usarCheckGithub, setUsarCheckGithub] = useState(false); //useState do Checkbox (define se é true ou false (marcardo ou nao marcado))
   const [valorDigitado, setValorDigitado] = useState(""); //preciso do valor salvo inputado para poder colocar na variável do link do github
+
+  useEffect(() => {
+    if (label === "Imagem" && valor === "") {
+      setValorDigitado("");
+      setUsarCheckGithub("");
+    }
+  }, [valor, label]);
 
   const linkGithub = (usuario) => {
     return `https://github.com/${usuario}.png`;
@@ -65,7 +72,7 @@ export const CampoTexto = ({
         placeholder={
           usarCheckGithub === true
             ? "Digite apenas o usuário do github que deseja inserir a foto"
-            : "Digite o link da foto que deseja incluir"
+            : placeholder
         }
       />
     </div>
