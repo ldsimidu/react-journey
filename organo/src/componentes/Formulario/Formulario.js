@@ -13,6 +13,7 @@ export const Formulario = (props) => {
   const aoSalvar = (evento) => {
     evento.preventDefault(); //evento que impede auto carregar do botão
     props.novoColaborador({
+      id: Date.now(),
       nome,
       cargo,
       imagem,
